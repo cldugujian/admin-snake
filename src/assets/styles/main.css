@@ -1,0 +1,16 @@
+/* 所有标签元素样式重置 - 最低优先级 */
+@import "reset.css";
+/* 所有动画样式 - 低优先级 */
+@import "animation.css";
+/* 共用样式 - 低优先级 */
+@import "common.css";
+/* 列表样式 - 中优先级 */
+@import "list.css";
+/* 头+低 - 中优先级 */
+@import "header&footer.css";
+/* 页面样式 - 高优先级 */
+@import "page.css";
+/* 插件样式重置 - 高优先级 */
+@import "rebuild.css";
+/* 预设样式 - 最高优先级 */
+@import "preset.css";

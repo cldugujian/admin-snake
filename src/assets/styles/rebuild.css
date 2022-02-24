@@ -1,0 +1,106 @@
+/* mint-ui */
+
+/* swiper插件 - 小圆点样式重置 */
+.swiper-container-horizontal .swiper-pagination{
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom:0.12rem;
+}
+.swiper-container-horizontal .swiper-pagination-bullets .swiper-pagination-bullet{
+    width:6px;
+    height:6px;
+    margin-left:0.04rem;
+    margin-right:0.04rem;
+    background: #fff;
+    opacity: 1;
+}
+.swiper-container-horizontal .swiper-pagination-bullets .swiper-pagination-bullet-active{
+    background-color: #e61e17;
+}
+
+/* croppa插件 */
+.pop_croppa{
+    flex-direction: column;
+    position: fixed;
+    display: none;
+    z-index: 2;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.9);
+}
+.croppa-container {
+    position: relative;
+    background: #fff;
+}
+.croppa-container svg{
+    position: absolute;
+}
+.croppa_footer{
+    width:250px;
+    margin-top:0.2rem;
+}
+.croppa_footer .btn{
+    width:100%;
+    font-size:0.14rem;
+    margin-left:0.1rem;
+    margin-right:0.1rem;
+}
+
+/* 行业弹窗 */
+.pop_industries{
+    position: fixed;
+    z-index: 3;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #fff;
+}
+.pop_industries_child{
+    position: absolute;
+    top:0;
+    height:100%;
+    overflow: auto;
+}
+.pop_industries_child.layout_1{
+    z-index: 1;
+    left:0;
+    width:30%;
+    background: #fff;
+    border-right:1px solid #e1e1e1;
+}
+.pop_industries_child.layout_2{
+    z-index: 1;
+    right:0;
+    width:70%;
+    background: #fff;
+}
+.pop_industries_child.layout_2 .pop_industries_ul{
+    padding-left:0.1rem;
+    padding-right:0.1rem;
+}
+.pop_industries_ul h3{
+    color:#aaa;
+    font-size:0.14rem;
+    line-height:0.5rem;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    border-bottom:1px solid #f7f7f7;
+}
+.pop_industries_child.layout_1 h3{
+    width:80%;
+}
+.pop_industries_child.layout_2 h3{
+    width:100%;
+}
+.pop_industries_ul li:last-child h3{
+    border-bottom:none;
+}
+.pop_industries_ul li.active h3{
+    color:#e61e17;
+}
